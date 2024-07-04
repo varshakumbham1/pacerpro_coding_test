@@ -65,3 +65,7 @@ This guide provides step-by-step instructions for setting up Sumo Logic queries 
 #### Verification and Cleanup
 
 1. Verify functionality, then destroy the infrastructure: `terraform destroy`
+
+## Recordings
+
+For detailed video tutorials and recorded sessions, refer to the following link: https://drive.google.com/drive/folders/1GSlHahsQmkd-qa_Jpj1nbffMWKbfyIP7?usp=drive_link
