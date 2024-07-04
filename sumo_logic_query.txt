@@ -1,0 +1,14 @@
+Query to identify log entries where the response time of the ‘/api/data’ endpoint exceeds 3 seconds
+
+_source=app/logs "/api/data"
+| parse "response_time=*s" as response_time
+| where response_time > 3
+
+Query to alert that triggers if more than 5 such entries are detected within a 10-minute window
+
+_source=app/logs "/api/data" 
+| parse "response_time=*s" as response_time 
+| where response_time > 3 
+| count
+
+
